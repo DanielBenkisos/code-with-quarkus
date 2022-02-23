@@ -37,7 +37,8 @@ public class UserResource {
         logger.info("create user done");
 
         logger.info("starting create userDTO");
-        UserDTO userDTO = new UserDTO("" + response.getUser().getId(),
+        UserDTO userDTO = new UserDTO(
+                "" + response.getUser().getId(),
                 response.getUser().getEmail().getEmail(),
                 response.getUser().getUsername().getUsername(),
                 response.getUser().getPassword().getPassword());
